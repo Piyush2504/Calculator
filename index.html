@@ -7,44 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\index.css">
-    <script src="Calculator\javascript\index.js"></script>
+    <script src="javascript\index.js"></script>
 </head>
 
 <body>
     <div class="div">
-        <table>
-            <tr>
-                <input type="text" name="" id="" class="text" readonly>
-            </tr>
-            <br>
-            <tr>
-                <input type="button" value="AC" class="button">
-                <input type="button" value="DEL" class="button">
-                <input type="button" value="/" class="button">
-                <input type="button" value="%" class="button">
-            </tr>
-            <br>
-            <tr>
-                <input type="button" value="7" class="button">
-                <input type="button" value="8" class="button">
-                <input type="button" value="9" class="button">
-                <input type="button" value="*" class="button">
-            </tr>
-            <br>
-            <tr>
-                <input type="button" value="4" class="button">
-                <input type="button" value="5" class="button">
-                <input type="button" value="6" class="button">
-                <input type="button" value="-" class="button">
-            </tr>
-            <br>
-            <tr>
-                <input type="button" value="1" class="button">
-                <input type="button" value="2" class="button">
-                <input type="button" value="3" class="button">
-                <input type="button" value="+" class="button">
-            </tr>
-        </table>
+        <h2 class="h2">CALCULATOR</h2>
+        <form name="form">
+            <input type="text" name="textbox" id="" class="text" readonly>
+        </form>
+
+        <br>
+
+        <input type="button" value="AC" class="button" style="width: 124px;" onclick="ac()">
+        <input type="button" value="DEL" class="button" onclick="del()">
+        <input type="button" value="/" class="button" onclick="insert('/')">
+
+        <br>
+        <input type="button" value="7" class="button" onclick="insert(7)">
+        <input type="button" value="8" class="button" onclick="insert(8)">
+        <input type="button" value="9" class="button" onclick="insert(9)">
+        <input type="button" value="X" class="button" onclick="insert('*')">
+
+        <br>
+        <input type="button" value="4" class="button" onclick="insert(4)">
+        <input type="button" value="5" class="button" onclick="insert(5)">
+        <input type="button" value="6" class="button" onclick="insert(6)">
+        <input type="button" value="-" class="button" onclick="insert('-')">
+
+        <br>
+        <input type="button" value="1" class="button" onclick="insert(1)">
+        <input type="button" value="2" class="button" onclick="insert(2)">
+        <input type="button" value="3" class="button" onclick="insert(3)">
+        <input type="button" value="+" class="button" onclick="insert('+')">
+        <br>
+        <input type="button" value="0" class="button" onclick="insert(0)">
+        <input type="button" value="." class="button" onclick="insert('.')">
+        <input type="button" value="=" class="button" style="width: 124px;" onclick="eql()">
+
 
     </div>
 </body>
