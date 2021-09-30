@@ -3,9 +3,16 @@ body {
 }
 
 .div {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 300px;
     width: fit-content;
+}
+
+.div1 {
+    margin-top: -546px;
+    margin-left: 900px;
+    width: fit-content;
+    float: left;
 }
 
 .div.button {
@@ -14,9 +21,9 @@ body {
 
 .text {
     border: none;
-    height: 60px;
+    height: 80px;
     outline: none;
-    width: 230px;
+    width: 300px;
     font-size: 30px;
     text-align: right;
     letter-spacing: 2px;
@@ -25,13 +32,13 @@ body {
 }
 
 .button {
-    height: 50px;
-    width: 60px;
+    height: 70px;
+    width: 77.5px;
     margin-top: 3px;
     background-color: black;
     color: #03e9f4;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .button:hover {
@@ -47,4 +54,67 @@ body {
     color: #03e9f4;
     margin-left: 45px;
     text-shadow: 0px 0px 5px #03e9f4, 0px 0px 30px #03e9f4, 0px 0px 50px #03e9f4, 0px 0px 250px #03e9f4;
+}
+
+.converter {
+    color: #f45b03;
+    margin-left: 60px;
+    text-shadow: 0px 0px 5px #f45b03, 0px 0px 30px #f45b03, 0px 0px 50px #f45b03, 0px 0px 250px #f45b03;
+}
+
+#mass {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #00a2ff;
+    border: none;
+    font-size: 16px;
+}
+
+#length {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #3cff00;
+    border: none;
+    font-size: 16px;
+}
+
+#currency {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #f4033f;
+    border: none;
+    font-size: 16px;
+}
+
+#mass:hover {
+    background-color: #00a2ff;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #00a2ff, 0px 0px 30px #00a2ff, 0px 0px 50px #00a2ff, 0px 0px 250px #00a2ff;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#length:hover {
+    background-color: #3cff00;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #3cff00, 0px 0px 30px #3cff00, 0px 0px 50px #3cff00, 0px 0px 250px #3cff00;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#currency:hover {
+    background-color: #f4033f;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #f4033f, 0px 0px 30px #f4033f, 0px 0px 50px #f4033f, 0px 0px 250px #f4033f;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
 }
