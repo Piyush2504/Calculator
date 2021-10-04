@@ -9,11 +9,12 @@ body {
 }
 
 .div1 {
+
     margin-top: -546px;
     margin-left: 900px;
     float: left;
     position: absolute;
-    border: 2px solid red;
+    
 }
 
 .div.button {
@@ -222,7 +223,7 @@ body {
 
 .curr_io {
     height: 50px;
-    width: 170px;
+    width: 150px;
     font-size: 20px;
     border: none;
     outline: none;
@@ -257,10 +258,11 @@ body {
 
 .con_form {
     position: absolute;
+    
 }
 
 #mass_form {
-    left: -330px;
+    left: -660px;
 }
 
 #length_form {
@@ -268,5 +270,5 @@ body {
 }
 
 #curr_form {
-    left: 330px;
+    left: -330px;
 }

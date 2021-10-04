@@ -45,19 +45,20 @@
         <input type="button" value="." class="button" onclick="insert('.')">
         <input type="button" value="=" class="button" style="width: 159px;" onclick="eql()">
     </div>
-
+    <div>
+    
     <div class="div1">
         <h1 class="converter">CONVERTER</h1>
         <br>
         <div class="conbtn">
-            <input type="button" value="MASS" id="mass">
-            <input type="button" value="LENGTH" id="length">
-            <input type="button" value="CURRENCY" id="currency">
+            <input type="button" value="MASS" id="mass" onclick="mass_form()">
+            <input type="button" value="LENGTH" id="length" onclick="length_form()">
+            <input type="button" value="CURRENCY" id="currency" onclick="curr_form()">
         </div>
 
 
         <form class="con_form" id="mass_form">
-            <input type="text" placeholder="Mass Input" class="mass_io">
+            <input type="text" placeholder="Mass Input" class="mass_io" >
             <select name="mass_drop" class="mass_drop">
                 <option value="KG">KiloGrams</option>
                 <option value="G">Grams</option>
@@ -128,6 +129,7 @@
             </select>
         </form>
     </div>
+</div>
 </body>
 <link rel="stylesheet" href="css\index.css">
 <script src="javascript\index.js"></script>
