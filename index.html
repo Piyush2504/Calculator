@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\index.css">
-    <script src="javascript\index.js"></script>
+
 
 </head>
 
@@ -45,17 +44,92 @@
         <input type="button" value="0" class="button" onclick="insert(0)">
         <input type="button" value="." class="button" onclick="insert('.')">
         <input type="button" value="=" class="button" style="width: 159px;" onclick="eql()">
-
-
     </div>
 
     <div class="div1">
         <h1 class="converter">CONVERTER</h1>
         <br>
-        <input type="button" value="MASS" id="mass">
-        <input type="button" value="LENGTH" id="length">
-        <input type="button" value="CURRENCY" id="currency">
+        <div class="conbtn">
+            <input type="button" value="MASS" id="mass">
+            <input type="button" value="LENGTH" id="length">
+            <input type="button" value="CURRENCY" id="currency">
+        </div>
+
+
+        <form class="con_form" id="mass_form">
+            <input type="text" placeholder="Mass Input" class="mass_io">
+            <select name="mass_drop" class="mass_drop">
+                <option value="KG">KiloGrams</option>
+                <option value="G">Grams</option>
+                <option value="MG">MilliGram</option>
+                <option value="POUND">Pounds</option>
+                <option value="TON">Tons</option>
+            </select>
+            <br> <br>
+            <input type="button" value="CONVERT" class="mass_btn">
+            <br> <br>
+            <input type="text" placeholder="Mass Output" class="mass_io" readonly>
+            <select name="mass_drop" class="mass_drop">
+                <option value="KG">KiloGrams</option>
+                <option value="G">Grams</option>
+                <option value="MG">MilliGram</option>
+                <option value="POUND">Pounds</option>
+                <option value="TON">Tons</option>
+            </select>
+        </form>
+
+
+        <form class="con_form" id="length_form">
+            <input type="text" placeholder="Length Input" class="length_io">
+            <select name="length_drop" class="length_drop">
+                <option value="CM">CentiMetres</option>
+                <option value="MM">CentiMetres</option>
+                <option value="M">Meters</option>
+                <option value="KM">KiloMetres</option>
+                <option value="INCHES">Inches</option>
+                <option value="FEET">Feets</option>
+            </select>
+            <br> <br>
+            <input type="button" value="CONVERT" class="length_btn">
+            <br> <br>
+            <input type="text" placeholder="Length Output" class="length_io" readonly>
+            <select name="length_drop" class="length_drop">
+                <option value="CM">CentiMetres</option>
+                <option value="MM">CentiMetres</option>
+                <option value="M">Meters</option>
+                <option value="KM">KiloMetres</option>
+                <option value="INCHES">Inches</option>
+                <option value="FEET">Feets</option>
+            </select>
+        </form>
+
+
+        <form class="con_form" id="curr_form">
+            <input type="text" placeholder="Currency Input" class="curr_io">
+            <select name="curr_drop" class="curr_drop">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="YEN">YEN</option>
+                <option value="AUD">AUD</option>
+                <option value="AED">AED</option>
+            </select>
+            <br> <br>
+            <input type="button" value="CONVERT" class="curr_btn">
+            <br> <br>
+            <input type="text" placeholder="Currency Output" class="curr_io" readonly>
+            <select name="curr_drop" class="curr_drop">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="YEN">YEN</option>
+                <option value="AUD">AUD</option>
+                <option value="AED">AED</option>
+            </select>
+        </form>
     </div>
 </body>
+<link rel="stylesheet" href="css\index.css">
+<script src="javascript\index.js"></script>
 
 </html>

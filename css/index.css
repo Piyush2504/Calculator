@@ -11,8 +11,9 @@ body {
 .div1 {
     margin-top: -546px;
     margin-left: 900px;
-    width: fit-content;
     float: left;
+    position: absolute;
+    border: 2px solid red;
 }
 
 .div.button {
@@ -94,8 +95,18 @@ body {
     color: black;
     transition: 0.5s;
     box-shadow: 0px 0px 5px #00a2ff, 0px 0px 30px #00a2ff, 0px 0px 50px #00a2ff, 0px 0px 250px #00a2ff;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
+    border-radius: 10px;
+}
+
+#mass:focus {
+    background-color: #00a2ff;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #00a2ff, 0px 0px 30px #00a2ff, 0px 0px 50px #00a2ff, 0px 0px 250px #00a2ff;
+    /* position: relative;
+    z-index: 1; */
     border-radius: 10px;
 }
 
@@ -104,8 +115,18 @@ body {
     color: black;
     transition: 0.5s;
     box-shadow: 0px 0px 5px #3cff00, 0px 0px 30px #3cff00, 0px 0px 50px #3cff00, 0px 0px 250px #3cff00;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
+    border-radius: 10px;
+}
+
+#length:focus {
+    background-color: #3cff00;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #3cff00, 0px 0px 30px #3cff00, 0px 0px 50px #3cff00, 0px 0px 250px #3cff00;
+    /* position: relative;
+    z-index: 1; */
     border-radius: 10px;
 }
 
@@ -114,7 +135,138 @@ body {
     color: black;
     transition: 0.5s;
     box-shadow: 0px 0px 5px #f4033f, 0px 0px 30px #f4033f, 0px 0px 50px #f4033f, 0px 0px 250px #f4033f;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
     border-radius: 10px;
+}
+
+#currency:focus {
+    background-color: #f4033f;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #f4033f, 0px 0px 30px #f4033f, 0px 0px 50px #f4033f, 0px 0px 250px #f4033f;
+    /* position: relative;
+    z-index: 1; */
+    border-radius: 10px;
+}
+
+.mass_io {
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #00a2ff;
+    background: transparent;
+    color: #00a2ff;
+    text-decoration: #00a2ff;
+}
+
+.mass_io::placeholder {
+    color: #00a2ff;
+}
+
+.mass_btn {
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    background: #00a2ff;
+    box-shadow: 0px 0px 5px #00a2ff, 0px 0px 30px #00a2ff, 0px 0px 50px #00a2ff, 0px 0px 250px #00a2ff;
+    border-radius: 10px;
+    border: none;
+}
+
+.mass_drop {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-width: 0px;
+    color: #00a2ff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.length_io {
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3cff00;
+    background: transparent;
+    color: #3cff00;
+    text-decoration: #3cff00;
+}
+
+.length_io::placeholder {
+    color: #3cff00;
+}
+
+.length_btn {
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    background: #3cff00;
+    box-shadow: 0px 0px 5px #3cff00, 0px 0px 30px #3cff00, 0px 0px 50px #3cff00, 0px 0px 250px #3cff00;
+    border-radius: 10px;
+    border: none;
+}
+
+.length_drop {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-width: 0px;
+    color: #3cff00;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.curr_io {
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f4033f;
+    background: transparent;
+    color: #f4033f;
+    text-decoration: #f4033f;
+}
+
+.curr_io::placeholder {
+    color: #f4033f;
+}
+
+.curr_btn {
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    background: #f4033f;
+    box-shadow: 0px 0px 5px #f4033f, 0px 0px 30px #f4033f, 0px 0px 50px #f4033f, 0px 0px 250px #f4033f;
+    border-radius: 10px;
+    border: none;
+}
+
+.curr_drop {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-width: 0px;
+    color: #f4033f;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.con_form {
+    position: absolute;
+}
+
+#mass_form {
+    left: -330px;
+}
+
+#length_form {
+    left: 0px;
+}
+
+#curr_form {
+    left: 330px;
 }
