@@ -1,27 +1,28 @@
-var m=document.getElementById("mass_form");
-var l=document.getElementById("length_form");
-var c=document.getElementById("curr_form");
-function mass_form()
-{
-    m.style.transform="translatex(660px)";
-    l.style.transform="translatex(-660px)";
-    c.style.transform="translatex(0px)";
+var md = document.getElementById("mass_div")
+var ld = document.getElementById("length_div")
+var cd = document.getElementById("curr_div")
+
+function mass_form() {
+    md.style.visibility = "visible";
+    ld.style.visibility = "hidden";
+    cd.style.visibility = "hidden";
 
 }
-function length_form()
-{
-    m.style.transform="translatex(0px)";
-    l.style.transform="translatex(0px)";
-    c.style.transform="translatex(0px)";
+
+function length_form() {
+    md.style.visibility = "hidden";
+    ld.style.visibility = "visible";
+    cd.style.visibility = "hidden";
 
 }
-function curr_form()
-{
-    m.style.transform="translatex(0px)";
-    l.style.transform="translatex(-330px)";
-    c.style.transform="translatex(330px)";
+
+function curr_form() {
+    md.style.visibility = "hidden";
+    ld.style.visibility = "hidden";
+    cd.style.visibility = "visible";
 
 }
+
 function insert(num) {
     document.form.textbox.value += num;
 }
