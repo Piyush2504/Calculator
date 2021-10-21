@@ -24,19 +24,19 @@ function curr_form() {
 }
 
 function insert(num) {
-    document.form.output_cal.value += num;
+    document.form_cal.output_cal.value += num;
 }
 
 function ac() {
-    document.form.output_cal.value = "";
+    document.form_cal.output_cal.value = "";
 }
 
 function del() {
-    var sub = document.form.output_cal.value;
-    document.form.output_cal.value = sub.substring(0, sub.length - 1);
+    var sub = document.form_cal.output_cal.value;
+    document.form_cal.output_cal.value = sub.substring(0, sub.length - 1);
 }
 
 function eql() {
-    var sub = document.form.output_cal.value;
-    document.form.output_cal.value = eval(sub);
+    var sub = document.form_cal.output_cal.value;
+    document.form_cal.output_cal.value = eval(sub);
 }

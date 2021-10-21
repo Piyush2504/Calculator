@@ -2,10 +2,20 @@ body {
     background-color: rgba(0, 0, 0, 0.900);
 }
 
-.div_cal {
+.div {
     margin-top: 100px;
     margin-left: 300px;
     width: fit-content;
+}
+
+.div_cal {
+    position: absolute;
+    visibility: hidden;
+}
+
+.div_scal {
+    position: absolute;
+    /* visibility: hidden; */
 }
 
 .div_con {
@@ -19,6 +29,10 @@ body {
     align-items: center;
 }
 
+.div_scal.button {
+    align-items: center;
+}
+
 .textbox_cal {
     border: none;
     height: 80px;
@@ -29,6 +43,36 @@ body {
     letter-spacing: 2px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.io {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+}
+
+.form_scalh {
+    border: none;
+    height: 56.5px;
+    outline: none;
+    width: 402px;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 2px;
+    background-color: white;
+    padding: 0px;
+}
+
+.form_scalo {
+    border: none;
+    height: 56.5px;
+    outline: none;
+    width: 402px;
+    font-size: 30px;
+    text-align: right;
+    letter-spacing: 2px;
+    background-color: white;
+    padding: 0px;
 }
 
 .button {
