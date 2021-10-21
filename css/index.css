@@ -8,15 +8,16 @@ body {
     width: fit-content;
 }
 
-.div_cal {
+
+/* .div_cal {
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
 }
 
-.div_scal {
+div_scal {
     position: absolute;
-    /* visibility: hidden; */
-}
+    visibility: hidden;
+} */
 
 .div_con {
     margin-top: -546px;
