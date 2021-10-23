@@ -10,25 +10,25 @@
 
 <body>
     <div class="div">
-        <!-- <div class="div_cal">
+        <div id="div_cal">
 
             <h1 class="heading_cal">CALCULATOR</h1>
             <form name="form_cal">
-                <input type="text" name="output_cal" id="" class="textbox_cal" readonly>
+                <input type="text" name="output_cal" id="textbox_cal" class="textbox_cal" readonly>
             </form>
 
             <br>
 
             <input type="button" value="AC" class="button" style="width: 159px;" onclick="ac()">
             <input type="button" value="DEL" class="button" onclick="del()">
-            <input type="button" value="/" class="button" onclick="insert('/')">
+            <input type="button" value="&#247;" class="button" onclick="insert('/')">
 
             <br>
 
             <input type="button" value="7" class="button" onclick="insert(7)">
             <input type="button" value="8" class="button" onclick="insert(8)">
             <input type="button" value="9" class="button" onclick="insert(9)">
-            <input type="button" value="X" class="button" onclick="insert('*')">
+            <input type="button" value="x" class="button" onclick="insert('*')">
 
             <br>
 
@@ -46,14 +46,14 @@
 
             <br>
 
-            <input type="button" value="&#8644;" class="button" onclick="insert(0)">
+            <input type="button" value="&#8644;" class="button" onclick="caltoscal()">
             <input type="button" value="0" class="button" onclick="insert(0)">
             <input type="button" value="." class="button" onclick="insert('.')">
             <input type="button" value="=" class="button" onclick="eql()">
-        </div> -->
+        </div>
 
 
-        <div class="div_scal">
+        <div id="div_scal">
             <h2 class="heading_cal">SCIENTIFIC CALCULATOR</h2>
             <div class="io">
                 <div class="form_scalh">
@@ -95,7 +95,7 @@
 
             <br>
 
-            <input type="button" value="&#8646;" class="button" onclick="insert(1)">
+            <input type="button" value="&#8646;" class="button" onclick="scaltocal()">
             <input type="button" value="." class="button" onclick="insert('.')">
             <input type="button" value="0" class="button" onclick="insert(0)">
             <input type="button" value="=" class="button" onclick="eql()">

@@ -1,6 +1,8 @@
 var md = document.getElementById("mass_div")
 var ld = document.getElementById("length_div")
 var cd = document.getElementById("curr_div")
+var cal = document.getElementById("div_cal")
+var scal = document.getElementById("div_scal")
 
 function mass_form() {
     md.style.visibility = "visible";
@@ -39,4 +41,14 @@ function del() {
 function eql() {
     var sub = document.form_cal.output_cal.value;
     document.form_cal.output_cal.value = eval(sub);
+}
+
+function caltoscal() {
+    cal.style.visibility = "hidden";
+    scal.style.visibility = "visible";
+}
+
+function scaltocal() {
+    cal.style.visibility = "visible";
+    scal.style.visibility = "hidden";
 }
