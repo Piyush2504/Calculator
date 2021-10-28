@@ -22,7 +22,24 @@ function curr_form() {
     md.style.visibility = "hidden";
     ld.style.visibility = "hidden";
     cd.style.visibility = "visible";
+    const api_id = "5e5ca69beb60412e88b137e91860f546"
 
+    $.getJSON(
+        "https://openexchangerates.org/api/latest.json?app_id=" + api_id,
+        function(data) {
+            // Check money.js has finished loading:
+            if (typeof fx !== "undefined" && fx.rates) {
+                fx.rates = data.rates;
+                fx.base = data.base;
+            } else {
+                // If not, apply to fxSetup global:
+                var fxSetup = {
+                    rates: data.rates,
+                    base: data.base
+                }
+            }
+        }
+    );
 }
 
 function insert(num) {

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi - Utility Calculator</title>
     <script src="https://unpkg.com/mathjs@9.5.1/lib/browser/math.js"></script>
-    <script src="https://unpkg.com/browse/moneyjs@0.2.1/lib/money.js"></script>
+    <script src="https://unpkg.com/money@0.2.0/money.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -65,18 +66,18 @@
                     <input type="text" class="form_scalo" name="outputval" readonly></p>
                 </form>
             </div>
-            <input type="button" value="AC"  class="sbutton" onclick="sac()">
+            <input type="button" value="AC" class="sbutton" onclick="sac()">
             <input type="button" value="DEL" class="sbutton" onclick="sdel()">
             <input type="button" value="sin" class="sbutton" onclick="sinsert('sin(')">
             <input type="button" value="cos" class="sbutton" onclick="sinsert('cos(')">
             <input type="button" value="tan" class="sbutton" onclick="sinsert('tan(')">
 
             <br>
-            <input type="button" value="e"   class="sbutton" onclick="sinsert('e')">
+            <input type="button" value="e" class="sbutton" onclick="sinsert('e')">
             <input type="button" value="log" class="sbutton" onclick="sinsert('log(')">
-            <input type="button" value="&pi;"class="sbutton" onclick="sinsert('pi')">
-            <input type="button" value="("   class="sbutton" onclick="sinsert('(')">
-            <input type="button" value=")"   class="sbutton" onclick="sinsert(')')">
+            <input type="button" value="&pi;" class="sbutton" onclick="sinsert('pi')">
+            <input type="button" value="(" class="sbutton" onclick="sinsert('(')">
+            <input type="button" value=")" class="sbutton" onclick="sinsert(')')">
             <br>
             <input type="button" value="^" class="sbutton" onclick="sinsert('^')">
             <input type="button" value="7" class="sbutton" onclick="sinsert(7)">
@@ -90,11 +91,10 @@
             <input type="button" value="4" class="sbutton" onclick="sinsert(4)">
             <input type="button" value="5" class="sbutton" onclick="sinsert(5)">
             <input type="button" value="6" class="sbutton" onclick="sinsert(6)">
-            <input type="button" value="x" class="sbutton" onclick="sinsert('*')">
-s
+            <input type="button" value="x" class="sbutton" onclick="sinsert('*')"> s
             <br>
 
-            <input type="button" value="n!"class="sbutton" onclick="sinsert('!')">
+            <input type="button" value="n!" class="sbutton" onclick="sinsert('!')">
             <input type="button" value="1" class="sbutton" onclick="sinsert(1)">
             <input type="button" value="2" class="sbutton" onclick="sinsert(2)">
             <input type="button" value="3" class="sbutton" onclick="sinsert(3)">
@@ -135,7 +135,7 @@ s
                 <input type="button" onclick="mass_eval()" value="CONVERT" class="mass_btn">
                 <br> <br>
                 <input type="text" id="mass_out" placeholder="Mass Output" class="mass_io" readonly>
-                <select name="mass_drop"  id="mass_conto"  class="mass_drop">
+                <select name="mass_drop" id="mass_conto" class="mass_drop">
                     <option value="kg">KiloGrams</option>
                     <option value="g">Grams</option>
                     <option value="mg">MilliGram</option>
@@ -147,8 +147,8 @@ s
 
         <div id="length_div" class="length_div">
             <form class="con_form" id="length_form">
-                <input type="text"  id="length_in" placeholder="Length Input" class="length_io">
-                <select name="length_drop" id="length_confrom"  class="length_drop">
+                <input type="text" id="length_in" placeholder="Length Input" class="length_io">
+                <select name="length_drop" id="length_confrom" class="length_drop">
                     <option value="cm">CentiMetres</option>
                     <option value="mm">MilliMetres</option>
                     <option value="m">Meters</option>
@@ -157,10 +157,10 @@ s
                     <option value="ft">Feets</option>
                 </select>
                 <br> <br>
-                <input type="button" onclick="length_eval()"  value="CONVERT" class="length_btn">
+                <input type="button" onclick="length_eval()" value="CONVERT" class="length_btn">
                 <br> <br>
-                <input type="text" placeholder="Length Output" id="length_out"  class="length_io" readonly>
-                <select name="length_drop"  id="length_conto" class="length_drop">
+                <input type="text" placeholder="Length Output" id="length_out" class="length_io" readonly>
+                <select name="length_drop" id="length_conto" class="length_drop">
                     <option value="cm">CentiMetres</option>
                     <option value="mm">MilliMetres</option>
                     <option value="m">Meters</option>

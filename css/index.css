@@ -77,7 +77,6 @@ body {
     letter-spacing: 2px;
     background-color: white;
     padding: 0px;
-    
 }
 
 .button {
@@ -98,6 +97,7 @@ body {
     position: relative;
     z-index: 1;
 }
+
 .sbutton {
     height: 50px;
     width: 77.5px;
@@ -215,8 +215,6 @@ body {
     color: #00a2ff;
     text-decoration: #00a2ff;
     -webkit-appearance: none;
-    
-   
 }
 
 .mass_io::placeholder {
