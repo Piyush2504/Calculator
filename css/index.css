@@ -195,6 +195,9 @@ body {
     background: transparent;
     color: #00a2ff;
     text-decoration: #00a2ff;
+    -webkit-appearance: none;
+    
+   
 }
 
 .mass_io::placeholder {

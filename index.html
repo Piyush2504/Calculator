@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi - Utility Calculator</title>
+    <script src="https://unpkg.com/mathjs@9.5.1/lib/browser/math.js"></script>
+    <script src="https://unpkg.com/browse/moneyjs@0.2.1/lib/money.js"></script>
 </head>
 
 <body>
@@ -116,58 +118,58 @@
 
         <div id="mass_div" class="mass_div">
             <form class="con_form" id="mass_form">
-                <input type="text" placeholder="Mass Input" class="mass_io">
-                <select name="mass_drop" class="mass_drop">
-                <option value="KG">KiloGrams</option>
-                <option value="G">Grams</option>
-                <option value="MG">MilliGram</option>
-                <option value="POUND">Pounds</option>
-                <option value="TON">Tons</option>
+                <input type="text" id="mass_in" placeholder="Mass Input" class="mass_io">
+                <select name="mass_drop" id="mass_confrom" class="mass_drop">
+                <option value="kg">KiloGrams</option>
+                <option value="g">Grams</option>
+                <option value="mg">MilliGram</option>
+                <option value="lb">Pounds</option>
+                <option value="ton">Tons</option>
                 </select>
                 <br> <br>
-                <input type="button" value="CONVERT" class="mass_btn">
+                <input type="button" onclick="mass_eval()" value="CONVERT" class="mass_btn">
                 <br> <br>
-                <input type="text" placeholder="Mass Output" class="mass_io" readonly>
-                <select name="mass_drop" class="mass_drop">
-                    <option value="KG">KiloGrams</option>
-                    <option value="G">Grams</option>
-                    <option value="MG">MilliGram</option>
-                    <option value="POUND">Pounds</option>
-                    <option value="TON">Tons</option>
+                <input type="text" id="mass_out" placeholder="Mass Output" class="mass_io" readonly>
+                <select name="mass_drop"  id="mass_conto"  class="mass_drop">
+                    <option value="kg">KiloGrams</option>
+                    <option value="g">Grams</option>
+                    <option value="mg">MilliGram</option>
+                    <option value="lb">Pounds</option>
+                    <option value="ton">Tons</option>
                 </select>
             </form>
         </div>
 
         <div id="length_div" class="length_div">
             <form class="con_form" id="length_form">
-                <input type="text" placeholder="Length Input" class="length_io">
-                <select name="length_drop" class="length_drop">
-                <option value="CM">CentiMetres</option>
-                <option value="MM">CentiMetres</option>
-                <option value="M">Meters</option>
-                <option value="KM">KiloMetres</option>
-                <option value="INCHES">Inches</option>
-                <option value="FEET">Feets</option>
+                <input type="text"  id="length_in" placeholder="Length Input" class="length_io">
+                <select name="length_drop" id="length_confrom"  class="length_drop">
+                    <option value="cm">CentiMetres</option>
+                    <option value="mm">MilliMetres</option>
+                    <option value="m">Meters</option>
+                    <option value="km">KiloMetres</option>
+                    <option value="in">Inches</option>
+                    <option value="ft">Feets</option>
                 </select>
                 <br> <br>
-                <input type="button" value="CONVERT" class="length_btn">
+                <input type="button" onclick="length_eval()"  value="CONVERT" class="length_btn">
                 <br> <br>
-                <input type="text" placeholder="Length Output" class="length_io" readonly>
-                <select name="length_drop" class="length_drop">
-                    <option value="CM">CentiMetres</option>
-                    <option value="MM">CentiMetres</option>
-                    <option value="M">Meters</option>
-                    <option value="KM">KiloMetres</option>
-                    <option value="INCHES">Inches</option>
-                    <option value="FEET">Feets</option>
+                <input type="text" placeholder="Length Output" id="length_out"  class="length_io" readonly>
+                <select name="length_drop"  id="length_conto" class="length_drop">
+                    <option value="cm">CentiMetres</option>
+                    <option value="mm">MilliMetres</option>
+                    <option value="m">Meters</option>
+                    <option value="km">KiloMetres</option>
+                    <option value="in">Inches</option>
+                    <option value="ft">Feets</option>
                 </select>
             </form>
         </div>
 
         <div id="curr_div" class="curr_div">
             <form class="con_form" id="curr_form">
-                <input type="text" placeholder="Currency Input" class="curr_io">
-                <select name="curr_drop" class="curr_drop">
+                <input type="text" id="curr_in" placeholder="Currency Input" class="curr_io">
+                <select name="curr_drop" id="curr_confrom" class="curr_drop">
                 <option value="INR">INR</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
@@ -176,10 +178,10 @@
                 <option value="AED">AED</option>
                 </select>
                 <br> <br>
-                <input type="button" value="CONVERT" class="curr_btn">
+                <input type="button" onclick="curr_eval()" value="CONVERT" class="curr_btn">
                 <br> <br>
-                <input type="text" placeholder="Currency Output" class="curr_io" readonly>
-                <select name="curr_drop" class="curr_drop">
+                <input type="text" id="curr_out" placeholder="Currency Output" class="curr_io" readonly>
+                <select name="curr_drop" id="curr_conto" class="curr_drop">
                     <option value="INR">INR</option>
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
@@ -194,5 +196,8 @@
 </body>
 <link rel="stylesheet" href="css\index.css">
 <script src="javascript\index.js"></script>
+<script src="javascript\mass_converter.js"></script>
+<script src="javascript\length_converter.js"></script>
+<script src="javascript\currency_converter.js"></script>
 
 </html>
