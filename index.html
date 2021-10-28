@@ -58,12 +58,12 @@
         <div id="div_scal">
             <h2 class="heading_cal">SCIENTIFIC CALCULATOR</h2>
             <div class="io">
-                <div class="form_scalh">
-                    <p id="history_value"></p>
-                </div>
-                <div class="form_scalo">
-                    <p id="output_value"></p>
-                </div>
+                <form name="formscalh">
+                    <input type="text" class="form_scalh" name="historyval" readonly>
+                </form>
+                <form name="formscalo">
+                    <input type="text" class="form_scalo" name="outputval" readonly></p>
+                </form>
             </div>
             <input type="button" value="AC" class="button" onclick="sac()">
             <input type="button" value="DEL" class="button" onclick="sdel()">
