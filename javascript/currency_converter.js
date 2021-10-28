@@ -9,9 +9,8 @@ function curr_eval(){
 
     curr_inputTypeValue=curr_inputval.value;
     curr_outputTypeValue=curr_outputval.value;
-    curr_output.value=fx(curr_input.value).from(curr_inputTypeValue).to(curr_outputTypeValue);
-    
+    var z=fx(curr_input.value).from(curr_inputTypeValue).to(curr_outputTypeValue);
+    curr_output.value=z;
 }
 
-// fx(1000).from("USD").to("GBP");
-// fx(1000).to("AED");
+
