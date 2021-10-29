@@ -59,24 +59,24 @@ body {
     border: none;
     height: 56.5px;
     outline: none;
-    width: 402px;
+    width: 392px;
     font-size: 20px;
     text-align: right;
     letter-spacing: 2px;
     background-color: white;
-    padding: 0px;
+    padding-right: 10px;
 }
 
 .form_scalo {
     border: none;
     height: 56.5px;
     outline: none;
-    width: 402px;
+    width: 392px;
     font-size: 30px;
     text-align: right;
     letter-spacing: 2px;
     background-color: white;
-    padding: 0px;
+    padding-right: 10px;
 }
 
 .button {
