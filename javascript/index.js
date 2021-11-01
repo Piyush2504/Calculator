@@ -57,7 +57,7 @@ function del() {
 
 function eql() {
     var sub = document.form_cal.output_cal.value;
-    document.form_cal.output_cal.value = eval(sub);
+    document.form_cal.output_cal.value = parseFloat(eval(sub)).toFixed(5);
 }
 
 function caltoscal() {
