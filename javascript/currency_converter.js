@@ -11,5 +11,5 @@ function curr_eval() {
     curr_inputTypeValue = curr_inputval.value;
     curr_outputTypeValue = curr_outputval.value;
     var z = fx(curr_input.value).from(curr_inputTypeValue).to(curr_outputTypeValue);
-    curr_output.value = z;
+    curr_output.value = parseFloat(z).toFixed(8);
 }
